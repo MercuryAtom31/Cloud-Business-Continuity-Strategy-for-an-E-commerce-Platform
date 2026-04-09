@@ -36,3 +36,6 @@ The platform uses both IaaS and PaaS-style capabilities, and each affects contin
 
 ### IaaS Impact
 IaaS gives more control over the operating environment, but it also increases continuity responsibility. The business must manage OS patching, server health, scaling, and failover logic. If a virtual machine or network component fails, recovery depends on how well those components were designed and automated.
+
+### PaaS Impact
+PaaS reduces operational burden because the provider manages more of the underlying platform. This improves resilience in many cases, but it does not remove risk. The organization still must plan for application configuration failures, service outages, quota limits, and regional service incidents.
