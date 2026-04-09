@@ -30,3 +30,6 @@ The strategy uses layered resilience so that one failure does not take down the 
 - Use managed platform services where possible to reduce operational overhead.
 - Keep backups and failover paths for data and critical dependencies.
 - Design manual fallback procedures for payment and account operations if a third-party service is unavailable.
+
+## IaaS and PaaS Impact on Business Continuity
+The platform uses both IaaS and PaaS-style capabilities, and each affects continuity differently.
