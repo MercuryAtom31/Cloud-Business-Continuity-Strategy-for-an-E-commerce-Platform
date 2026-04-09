@@ -21,3 +21,12 @@ The platform is treated as a set of business services rather than a single appli
 4. Order management and customer account data.
 5. Payment processing integration.
 6. Authentication and identity services.
+
+## Continuity Approach
+The strategy uses layered resilience so that one failure does not take down the entire business.
+
+- Build redundancy into customer-facing entry points.
+- Separate stateless web components from stateful data services.
+- Use managed platform services where possible to reduce operational overhead.
+- Keep backups and failover paths for data and critical dependencies.
+- Design manual fallback procedures for payment and account operations if a third-party service is unavailable.
