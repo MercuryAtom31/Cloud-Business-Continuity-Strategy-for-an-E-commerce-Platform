@@ -33,3 +33,6 @@ The strategy uses layered resilience so that one failure does not take down the 
 
 ## IaaS and PaaS Impact on Business Continuity
 The platform uses both IaaS and PaaS-style capabilities, and each affects continuity differently.
+
+### IaaS Impact
+IaaS gives more control over the operating environment, but it also increases continuity responsibility. The business must manage OS patching, server health, scaling, and failover logic. If a virtual machine or network component fails, recovery depends on how well those components were designed and automated.
