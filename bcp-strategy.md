@@ -39,3 +39,6 @@ IaaS gives more control over the operating environment, but it also increases co
 
 ### PaaS Impact (Platform as a Service)
 PaaS reduces operational burden because the provider manages more of the underlying platform. This improves resilience in many cases, but it does not remove risk. The organization still must plan for application configuration failures, service outages, quota limits, and regional service incidents.
+
+### Practical Result
+For this platform, PaaS should be used for the web and API layers where possible, while IaaS should be reserved for components that require direct infrastructure control. Either way, continuity planning must include provider outages, regional failures, and dependency degradation.
