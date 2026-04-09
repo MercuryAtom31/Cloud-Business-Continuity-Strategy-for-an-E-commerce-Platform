@@ -61,3 +61,13 @@ Recovery priorities are based on customer impact and revenue impact.
 - Noncritical internal tools
 
 The recovery strategy assumes that the storefront can be restored first, followed by deeper operational systems. If a dependency is unavailable, the business should degrade gracefully instead of failing completely.
+
+## Response Model
+The incident response process should follow a simple escalation path.
+
+1. Detect the incident through monitoring, alerts, or customer reports.
+2. Classify the scope: platform, data, identity, payment, or network.
+3. Decide whether the issue is local, regional, or provider-wide.
+4. Activate the incident manager and technical response team.
+5. Apply the fastest safe recovery action.
+6. Communicate status updates until service is stable.
