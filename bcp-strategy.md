@@ -45,3 +45,19 @@ For this platform, PaaS should be used for the web and API layers where possible
 
 ## Recovery Strategy
 Recovery priorities are based on customer impact and revenue impact.
+
+### Priority 1
+- Storefront access
+- Checkout and payment initiation
+- Authentication
+
+### Priority 2
+- Product catalog browsing
+- Order confirmation and notification delivery
+- Customer account access
+
+### Priority 3
+- Reporting
+- Noncritical internal tools
+
+The recovery strategy assumes that the storefront can be restored first, followed by deeper operational systems. If a dependency is unavailable, the business should degrade gracefully instead of failing completely.
