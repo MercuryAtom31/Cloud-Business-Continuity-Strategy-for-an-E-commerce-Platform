@@ -42,3 +42,6 @@ PaaS reduces operational burden because the provider manages more of the underly
 
 ### Practical Result
 For this platform, PaaS should be used for the web and API layers where possible, while IaaS should be reserved for components that require direct infrastructure control. Either way, continuity planning must include provider outages, regional failures, and dependency degradation.
+
+## Recovery Strategy
+Recovery priorities are based on customer impact and revenue impact.
