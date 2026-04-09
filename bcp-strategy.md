@@ -71,3 +71,11 @@ The incident response process should follow a simple escalation path.
 4. Activate the incident manager and technical response team.
 5. Apply the fastest safe recovery action.
 6. Communicate status updates until service is stable.
+
+## Dependency Handling
+The platform relies on services outside its direct control, so continuity planning must include each dependency.
+
+- If DNS or edge protection fails, use alternate DNS or failover routing.
+- If authentication fails, allow limited guest browsing and preserve cart state where possible.
+- If payment processing fails, queue orders, provide retry options, or switch to alternate payment handling where business rules allow.
+- If cloud application services degrade, fail over to a secondary environment or restore from infrastructure templates.
