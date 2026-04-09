@@ -11,3 +11,13 @@ The continuity strategy is designed around the following objectives:
 - Protect customer and order data from loss or corruption.
 - Restore critical services within agreed recovery targets.
 - Maintain clear communication with customers, partners, and internal stakeholders during incidents.
+
+## Critical Services
+The platform is treated as a set of business services rather than a single application.
+
+1. DNS and edge protection.
+2. Web storefront and API layer.
+3. Product catalog and checkout flow.
+4. Order management and customer account data.
+5. Payment processing integration.
+6. Authentication and identity services.
