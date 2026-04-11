@@ -79,3 +79,13 @@ The platform relies on services outside its direct control, so continuity planni
 - If authentication fails, allow limited guest browsing and preserve cart state where possible.
 - If payment processing fails, queue orders, provide retry options, or switch to alternate payment handling where business rules allow.
 - If cloud application services degrade, fail over to a secondary environment or restore from infrastructure templates.
+
+## Data Protection Strategy
+Data protection is central to continuity.
+
+- Perform regular backups of databases and critical application state.
+- Replicate data to a secondary location when supported.
+- Test restore procedures, not just backup creation.
+- Protect backup access with separate credentials and least privilege.
+- Define retention periods that match business, legal, and audit requirements.
+
