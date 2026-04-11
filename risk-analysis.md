@@ -91,3 +91,11 @@ The platform may be unavailable or slow during promotions, seasonal peaks, or tr
 - Impact: Medium
 - Mitigation: Auto-scale the application tier, test load thresholds, and monitor performance indicators.
 - Residual Risk: Sudden spikes can still create temporary performance degradation.
+
+### 9. Human Error in Configuration Changes
+Misconfigured deployments, firewall rules, secret values, or routing settings can break the service quickly.
+
+- Likelihood: High
+- Impact: Medium
+- Mitigation: Use infrastructure as code, peer review, staged deployment, and rollback procedures.
+- Residual Risk: Errors can still slip through if validation is weak.
