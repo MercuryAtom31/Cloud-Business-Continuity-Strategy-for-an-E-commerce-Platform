@@ -89,3 +89,11 @@ Data protection is central to continuity.
 - Protect backup access with separate credentials and least privilege.
 - Define retention periods that match business, legal, and audit requirements.
 
+## Communication Strategy
+Communication must be part of continuity, not an afterthought.
+
+- Publish internal incident updates to operations, support, and leadership.
+- Provide customer-facing status updates when customer impact is likely.
+- Use a standard message template for service disruption, workaround, and resolution notices.
+- Track decisions during the incident so the post-incident review can be complete.
+
