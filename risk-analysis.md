@@ -59,3 +59,11 @@ Authentication is often a hard dependency for customer accounts, order history, 
 - Impact: High
 - Mitigation: Allow guest browsing and guest checkout where business rules permit, and design the application to preserve carts during login failures.
 - Residual Risk: Some account functions may remain unavailable until the identity service is restored.
+
+### 5. Payment Processor Outage
+The payment processor is a critical third-party dependency. If it fails, customers may be unable to finish checkout.
+
+- Likelihood: Medium
+- Impact: High
+- Mitigation: Support retry logic, queue pending orders when appropriate, and provide alternate payment workflows if available.
+- Residual Risk: Lost conversions and delayed order completion may still occur.
