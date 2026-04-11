@@ -25,3 +25,13 @@ Risks with high likelihood and high impact require the fastest and most complete
 | Capacity or scaling failure | Medium | Medium | Slow performance and abandoned carts |
 | Human error in configuration changes | High | Medium | Service instability or outage during deployment |
 | Third-party dependency failure | Medium | High | Downstream business services become unavailable |
+
+## Detailed Risk Analysis
+
+### 1. Cloud Platform Outage
+The platform depends on managed cloud services for the website, API, and data access. A provider incident can remove access to multiple services at once.
+
+- Likelihood: Medium
+- Impact: High
+- Mitigation: Use multi-zone or multi-region design where feasible, automate failover, and define degraded operating modes.
+- Residual Risk: Some provider-wide incidents may still affect all regions or services.
