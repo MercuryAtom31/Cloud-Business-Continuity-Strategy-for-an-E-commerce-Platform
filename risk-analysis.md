@@ -35,3 +35,11 @@ The platform depends on managed cloud services for the website, API, and data ac
 - Impact: High
 - Mitigation: Use multi-zone or multi-region design where feasible, automate failover, and define degraded operating modes.
 - Residual Risk: Some provider-wide incidents may still affect all regions or services.
+
+### 2. Regional Service Failure
+A regional failure can affect compute, storage, networking, or managed platform services for the entire e-commerce stack.
+
+- Likelihood: Medium
+- Impact: High
+- Mitigation: Maintain a secondary region, keep infrastructure templates ready, and test cross-region failover.
+- Residual Risk: Cross-region recovery may take time and may not preserve every noncritical feature.
