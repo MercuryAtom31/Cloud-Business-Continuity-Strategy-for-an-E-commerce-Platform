@@ -97,3 +97,11 @@ Communication must be part of continuity, not an afterthought.
 - Use a standard message template for service disruption, workaround, and resolution notices.
 - Track decisions during the incident so the post-incident review can be complete.
 
+## Testing and Validation
+Continuity controls should be tested regularly.
+
+- Run failover tests for critical customer-facing services.
+- Perform restore tests for databases and application configuration.
+- Simulate cloud provider service interruptions and dependency outages.
+- Test authentication and payment fallback behavior.
+- Review alerting thresholds and incident escalation paths after each exercise.
