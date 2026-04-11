@@ -75,3 +75,12 @@ Order history, inventory, and customer records are core business assets. Corrupt
 - Impact: High
 - Mitigation: Use backups, point-in-time recovery, replication, and restore testing.
 - Residual Risk: Recovery may restore data to an earlier point, causing limited data loss.
+
+### 7. Cyberattack or Account Compromise
+Attackers may target admin accounts, application credentials, payment flows, or customer data.
+
+- Likelihood: Medium
+- Impact: High
+- Mitigation: Enforce least privilege, MFA, secrets management, logging, WAF protections, and incident response playbooks.
+- Residual Risk: Advanced attacks may still cause service disruption or data exposure.
+
