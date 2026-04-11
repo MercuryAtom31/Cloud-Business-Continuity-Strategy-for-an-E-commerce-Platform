@@ -43,3 +43,11 @@ A regional failure can affect compute, storage, networking, or managed platform 
 - Impact: High
 - Mitigation: Maintain a secondary region, keep infrastructure templates ready, and test cross-region failover.
 - Residual Risk: Cross-region recovery may take time and may not preserve every noncritical feature.
+
+### 3. DNS or Edge Protection Failure
+If DNS resolution or edge protection fails, customers may not be able to reach the storefront even if the application is healthy.
+
+- Likelihood: Low
+- Impact: High
+- Mitigation: Use redundant DNS management, health-checked failover records, and alternate routing procedures.
+- Residual Risk: Propagation delays can slow recovery after a DNS change.
