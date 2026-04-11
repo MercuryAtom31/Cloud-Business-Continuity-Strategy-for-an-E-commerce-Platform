@@ -67,3 +67,11 @@ The payment processor is a critical third-party dependency. If it fails, custome
 - Impact: High
 - Mitigation: Support retry logic, queue pending orders when appropriate, and provide alternate payment workflows if available.
 - Residual Risk: Lost conversions and delayed order completion may still occur.
+
+### 6. Data Corruption or Data Loss
+Order history, inventory, and customer records are core business assets. Corruption can be caused by bugs, failed deployments, or storage issues.
+
+- Likelihood: Low
+- Impact: High
+- Mitigation: Use backups, point-in-time recovery, replication, and restore testing.
+- Residual Risk: Recovery may restore data to an earlier point, causing limited data loss.
