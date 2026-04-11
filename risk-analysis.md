@@ -84,3 +84,10 @@ Attackers may target admin accounts, application credentials, payment flows, or 
 - Mitigation: Enforce least privilege, MFA, secrets management, logging, WAF protections, and incident response playbooks.
 - Residual Risk: Advanced attacks may still cause service disruption or data exposure.
 
+### 8. Capacity or Scaling Failure
+The platform may be unavailable or slow during promotions, seasonal peaks, or traffic spikes.
+
+- Likelihood: Medium
+- Impact: Medium
+- Mitigation: Auto-scale the application tier, test load thresholds, and monitor performance indicators.
+- Residual Risk: Sudden spikes can still create temporary performance degradation.
