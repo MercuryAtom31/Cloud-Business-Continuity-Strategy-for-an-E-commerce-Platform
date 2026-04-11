@@ -105,3 +105,12 @@ Continuity controls should be tested regularly.
 - Simulate cloud provider service interruptions and dependency outages.
 - Test authentication and payment fallback behavior.
 - Review alerting thresholds and incident escalation paths after each exercise.
+
+## Success Measures
+The strategy is effective if the platform can consistently meet the following measures:
+
+- Recovery occurs within the documented target for critical services.
+- Data loss stays within approved limits.
+- Customers can still browse, log in, or check out during partial outages.
+- Incident communication starts quickly and remains accurate.
+- Post-incident actions are tracked and completed.
