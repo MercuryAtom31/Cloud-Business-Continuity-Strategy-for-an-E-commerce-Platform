@@ -51,3 +51,11 @@ If DNS resolution or edge protection fails, customers may not be able to reach t
 - Impact: High
 - Mitigation: Use redundant DNS management, health-checked failover records, and alternate routing procedures.
 - Residual Risk: Propagation delays can slow recovery after a DNS change.
+
+### 4. Identity Provider Outage
+Authentication is often a hard dependency for customer accounts, order history, and personalized experiences.
+
+- Likelihood: Medium
+- Impact: High
+- Mitigation: Allow guest browsing and guest checkout where business rules permit, and design the application to preserve carts during login failures.
+- Residual Risk: Some account functions may remain unavailable until the identity service is restored.
