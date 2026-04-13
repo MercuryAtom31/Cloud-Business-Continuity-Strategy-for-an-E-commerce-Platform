@@ -99,3 +99,11 @@ Misconfigured deployments, firewall rules, secret values, or routing settings ca
 - Impact: Medium
 - Mitigation: Use infrastructure as code, peer review, staged deployment, and rollback procedures.
 - Residual Risk: Errors can still slip through if validation is weak.
+
+### 10. Third-Party Dependency Failure
+External services beyond identity and payments, such as analytics, messaging, or fraud tools, can also fail.
+
+- Likelihood: Medium
+- Impact: High
+- Mitigation: Classify dependencies by criticality and isolate nonessential integrations so they do not block core checkout behavior.
+- Residual Risk: Dependency outages may still degrade noncritical capabilities.
