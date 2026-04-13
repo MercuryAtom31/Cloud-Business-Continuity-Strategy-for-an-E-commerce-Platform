@@ -10,3 +10,11 @@ The company runs its storefront and APIs on a managed cloud application platform
 - A third-party payment processor for checkout authorization.
 
 During a high-traffic sales event, a regional cloud networking and platform incident causes elevated latency, intermittent API errors, and request timeouts.
+
+## Business Context
+
+- Traffic was approximately 2.4x normal weekday baseline.
+- Promotion campaign was active across email and social channels.
+- Checkout abandonment sensitivity was high due to price-driven customers.
+
+The organization had monitoring and alerting in place, but not all dependency health checks were tied to automated failover decisions.
