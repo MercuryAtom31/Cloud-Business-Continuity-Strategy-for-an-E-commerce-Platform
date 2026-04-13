@@ -107,3 +107,12 @@ External services beyond identity and payments, such as analytics, messaging, or
 - Impact: High
 - Mitigation: Classify dependencies by criticality and isolate nonessential integrations so they do not block core checkout behavior.
 - Residual Risk: Dependency outages may still degrade noncritical capabilities.
+
+## Business Impact by Function
+The platform does not fail evenly. Different business functions are affected differently by an outage.
+
+- Storefront browsing: High customer visibility, high revenue impact.
+- Checkout: Highest revenue impact because it directly affects conversion.
+- Authentication: Medium to high customer impact, especially for returning users.
+- Order management: High operational impact if orders cannot be confirmed or tracked.
+- Reporting and analytics: Lower immediate customer impact, but still important for decision-making.
