@@ -138,3 +138,6 @@ These risks should receive the strongest investment in redundancy, automation, a
 - Enable monitoring, alerting, and incident escalation for all critical dependencies.
 - Test restore and failover procedures on a scheduled basis.
 - Document manual workarounds for identity and payment disruptions.
+
+## Residual Risk
+Even with strong controls, the organization will still have residual risk because some dependencies remain outside its direct control. The business should accept only the risk that is documented, monitored, and operationally manageable.
