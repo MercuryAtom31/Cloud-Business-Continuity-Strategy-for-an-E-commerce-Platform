@@ -141,3 +141,6 @@ These risks should receive the strongest investment in redundancy, automation, a
 
 ## Residual Risk
 Even with strong controls, the organization will still have residual risk because some dependencies remain outside its direct control. The business should accept only the risk that is documented, monitored, and operationally manageable.
+
+## Conclusion
+The platform’s most important risks are provider outages, dependency failures, configuration errors, and data protection failures. The best mitigation is a combination of resilient architecture, tested recovery processes, and careful dependency management. Continuity planning should focus first on anything that can prevent customers from browsing, logging in, or checking out.
