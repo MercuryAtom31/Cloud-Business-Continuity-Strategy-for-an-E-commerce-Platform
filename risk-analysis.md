@@ -128,3 +128,13 @@ The highest-priority risks are those that can stop sales or prevent customers fr
 6. Data corruption or loss.
 
 These risks should receive the strongest investment in redundancy, automation, and recovery testing.
+
+## Control Recommendations
+
+- Use automated deployment pipelines to reduce manual configuration errors.
+- Keep infrastructure definitions version controlled and reviewable.
+- Implement multi-zone or multi-region architecture for critical services.
+- Protect secrets and credentials with a managed secrets store.
+- Enable monitoring, alerting, and incident escalation for all critical dependencies.
+- Test restore and failover procedures on a scheduled basis.
+- Document manual workarounds for identity and payment disruptions.
