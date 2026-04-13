@@ -116,3 +116,15 @@ The platform does not fail evenly. Different business functions are affected dif
 - Authentication: Medium to high customer impact, especially for returning users.
 - Order management: High operational impact if orders cannot be confirmed or tracked.
 - Reporting and analytics: Lower immediate customer impact, but still important for decision-making.
+
+## Risk Prioritization
+The highest-priority risks are those that can stop sales or prevent customers from reaching the site.
+
+1. Cloud platform outage.
+2. Regional service failure.
+3. Payment processor outage.
+4. Identity provider outage.
+5. DNS or edge protection failure.
+6. Data corruption or loss.
+
+These risks should receive the strongest investment in redundancy, automation, and recovery testing.
