@@ -115,3 +115,8 @@ No evidence indicated data corruption, but transaction completion was degraded f
 - Create business KPI alerts tied to checkout success rate and login success rate.
 - Automate incident triggers for dependency degradation thresholds.
 - Run regular game-day exercises simulating identity and payment outages.
+
+### Communication and Operations
+- Prepare customer messaging templates for checkout disruption and delayed confirmation.
+- Link campaign controls to incident severity to reduce avoidable traffic surges.
+- Refine executive and operational reporting templates for faster decision support.
