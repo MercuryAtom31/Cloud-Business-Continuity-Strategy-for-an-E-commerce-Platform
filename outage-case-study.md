@@ -90,3 +90,11 @@ No evidence indicated data corruption, but transaction completion was degraded f
 - Fallback playbooks were documented but required too much manual coordination.
 - Initial communication focused on system symptoms instead of customer actions and alternatives.
 - Promotion throttling was delayed, so traffic pressure remained high during early recovery.
+
+## Continuity Lessons Learned
+
+1. Availability of browsing alone is not enough; checkout continuity is the real revenue control point.
+2. Third-party dependencies must be treated as first-class continuity risks with explicit fallback paths.
+3. Manual runbooks are useful, but automation is required for consistent response under pressure.
+4. Incident communication should include clear user guidance, not just technical status.
+5. High-traffic campaign controls should be tied to platform health signals.
