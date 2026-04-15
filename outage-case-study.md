@@ -18,3 +18,38 @@ During a high-traffic sales event, a regional cloud networking and platform inci
 - Checkout abandonment sensitivity was high due to price-driven customers.
 
 The organization had monitoring and alerting in place, but not all dependency health checks were tied to automated failover decisions.
+
+## Incident Timeline
+
+### T+00 minutes
+Synthetic monitors detect increased error rates on API endpoints.
+
+### T+05 minutes
+Customer support reports that users can browse products but fail at login and checkout intermittently.
+
+### T+10 minutes
+On-call engineer confirms platform-level latency and dependency timeouts. Incident severity is escalated.
+
+### T+15 minutes
+Incident manager activates continuity workflow and starts stakeholder communication cadence.
+
+### T+20 minutes
+Traffic steering to secondary environment begins for read-heavy storefront routes.
+
+### T+30 minutes
+Login failures continue because identity service in the primary path remains unstable.
+
+### T+40 minutes
+Guest checkout fallback is enabled for eligible users.
+
+### T+50 minutes
+Payment retries are queued with user-facing messaging instead of hard transaction failure.
+
+### T+70 minutes
+Primary region begins recovering, but elevated latency persists.
+
+### T+90 minutes
+Core browsing and checkout stabilize, though account features remain partially degraded.
+
+### T+120 minutes
+Incident status moved from active response to monitored recovery.
