@@ -110,3 +110,8 @@ No evidence indicated data corruption, but transaction completion was degraded f
 - Add stronger guest checkout path where policy allows.
 - Predefine identity degradation mode for account features.
 - Improve payment retry orchestration and idempotency handling.
+
+### Monitoring and Automation
+- Create business KPI alerts tied to checkout success rate and login success rate.
+- Automate incident triggers for dependency degradation thresholds.
+- Run regular game-day exercises simulating identity and payment outages.
