@@ -98,3 +98,10 @@ No evidence indicated data corruption, but transaction completion was degraded f
 3. Manual runbooks are useful, but automation is required for consistent response under pressure.
 4. Incident communication should include clear user guidance, not just technical status.
 5. High-traffic campaign controls should be tied to platform health signals.
+
+## Corrective Actions
+
+### Architecture and Platform
+- Implement dependency-aware failover routing rules.
+- Expand active-active or hot-standby capability for critical customer flows.
+- Separate critical checkout services from noncritical features to reduce blast radius.
