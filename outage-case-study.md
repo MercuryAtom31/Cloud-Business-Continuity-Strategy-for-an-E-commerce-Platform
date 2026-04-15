@@ -75,3 +75,11 @@ The immediate trigger was a regional cloud service disruption affecting network 
 - Failover focused first on browsing availability and did not initially preserve all checkout dependencies.
 
 No evidence indicated data corruption, but transaction completion was degraded for a significant portion of customers.
+
+## Response What Worked Well
+
+- Early detection from synthetic monitoring reduced time to incident declaration.
+- Incident manager role was activated quickly.
+- Customer-facing status updates were published at regular intervals.
+- Guest checkout fallback reduced total lost sales after activation.
+- Read-path failover protected product browsing and search for most users.
