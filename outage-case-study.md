@@ -66,3 +66,12 @@ Incident status moved from active response to monitored recovery.
 - Support ticket volume spiked.
 - Incident response consumed engineering and operations capacity for several hours.
 - Marketing campaign efficiency declined because paid traffic reached partially degraded services.
+
+## Root Cause Summary
+The immediate trigger was a regional cloud service disruption affecting network and managed application platform stability. The largest business impact came from dependency coupling:
+
+- Authentication path had no fast temporary bypass for account-required flows.
+- Payment retry strategy existed but was not fully automated at incident start.
+- Failover focused first on browsing availability and did not initially preserve all checkout dependencies.
+
+No evidence indicated data corruption, but transaction completion was degraded for a significant portion of customers.
