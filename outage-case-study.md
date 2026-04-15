@@ -105,3 +105,8 @@ No evidence indicated data corruption, but transaction completion was degraded f
 - Implement dependency-aware failover routing rules.
 - Expand active-active or hot-standby capability for critical customer flows.
 - Separate critical checkout services from noncritical features to reduce blast radius.
+
+### Authentication and Payments
+- Add stronger guest checkout path where policy allows.
+- Predefine identity degradation mode for account features.
+- Improve payment retry orchestration and idempotency handling.
