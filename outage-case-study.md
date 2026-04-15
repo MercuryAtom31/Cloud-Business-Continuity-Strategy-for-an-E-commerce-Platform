@@ -53,3 +53,10 @@ Core browsing and checkout stabilize, though account features remain partially d
 
 ### T+120 minutes
 Incident status moved from active response to monitored recovery.
+
+## Observed Customer Impact
+
+- Users experienced intermittent login and checkout failures.
+- Average page response time increased significantly during the first 45 minutes.
+- Conversion rate dropped during peak incident window.
+- Cart abandonment increased due to repeated payment failures and session interruptions.
