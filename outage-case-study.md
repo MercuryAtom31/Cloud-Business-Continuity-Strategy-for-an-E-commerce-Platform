@@ -120,3 +120,12 @@ No evidence indicated data corruption, but transaction completion was degraded f
 - Prepare customer messaging templates for checkout disruption and delayed confirmation.
 - Link campaign controls to incident severity to reduce avoidable traffic surges.
 - Refine executive and operational reporting templates for faster decision support.
+
+## Recovery Targets Evaluation
+Against continuity expectations, performance was mixed:
+
+- Detection objective: Met.
+- Initial response objective: Met.
+- Checkout continuity objective: Partially met.
+- Authentication continuity objective: Not fully met.
+- Customer communication objective: Met, with quality improvements needed.
