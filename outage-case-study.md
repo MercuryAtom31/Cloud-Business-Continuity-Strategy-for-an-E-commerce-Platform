@@ -83,3 +83,10 @@ No evidence indicated data corruption, but transaction completion was degraded f
 - Customer-facing status updates were published at regular intervals.
 - Guest checkout fallback reduced total lost sales after activation.
 - Read-path failover protected product browsing and search for most users.
+
+## Response Gaps
+
+- Authentication and payment dependency health were not tightly integrated into failover decision logic.
+- Fallback playbooks were documented but required too much manual coordination.
+- Initial communication focused on system symptoms instead of customer actions and alternatives.
+- Promotion throttling was delayed, so traffic pressure remained high during early recovery.
