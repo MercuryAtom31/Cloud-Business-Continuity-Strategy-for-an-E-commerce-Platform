@@ -129,3 +129,6 @@ Against continuity expectations, performance was mixed:
 - Checkout continuity objective: Partially met.
 - Authentication continuity objective: Not fully met.
 - Customer communication objective: Met, with quality improvements needed.
+
+## Conclusion
+This outage showed that cloud resilience depends on both platform design and dependency management. Even when core infrastructure begins to recover, customer experience remains fragile if identity and payment paths are not equally resilient. The highest-value improvements are dependency-aware failover, automated fallback actions, and continuity testing that reflects real customer journey failure modes.
