@@ -60,3 +60,9 @@ Incident status moved from active response to monitored recovery.
 - Average page response time increased significantly during the first 45 minutes.
 - Conversion rate dropped during peak incident window.
 - Cart abandonment increased due to repeated payment failures and session interruptions.
+
+## Operational Impact
+
+- Support ticket volume spiked.
+- Incident response consumed engineering and operations capacity for several hours.
+- Marketing campaign efficiency declined because paid traffic reached partially degraded services.
