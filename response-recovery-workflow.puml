@@ -1,6 +1,5 @@
 @startuml
 title Response and Recovery Workflow
-left to right direction
 
 ' Palette
 ' #211951 (deep navy)
@@ -10,22 +9,20 @@ left to right direction
 
 skinparam backgroundColor #F0F3FF
 skinparam shadowing false
-skinparam defaultFontName Segoe UI
+skinparam defaultFontName "Segoe UI"
 skinparam defaultFontColor #211951
 skinparam ArrowColor #211951
 skinparam ArrowThickness 1
 
-skinparam activity {
-  StartColor #15F5BA
-  EndColor #15F5BA
-  BarColor #211951
-  DiamondBackgroundColor #836FFF
-  DiamondBorderColor #211951
-  DiamondFontColor #F0F3FF
-  BackgroundColor #F0F3FF
-  BorderColor #211951
-  FontColor #211951
-}
+skinparam activityStartColor #15F5BA
+skinparam activityEndColor #15F5BA
+skinparam activityBarColor #211951
+skinparam activityDiamondBackgroundColor #836FFF
+skinparam activityDiamondBorderColor #211951
+skinparam activityDiamondFontColor #F0F3FF
+skinparam activityBackgroundColor #F0F3FF
+skinparam activityBorderColor #211951
+skinparam activityFontColor #211951
 
 start
 :Monitoring detects error spikes\nor support receives complaints;
