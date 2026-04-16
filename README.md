@@ -21,6 +21,12 @@ The scenario assumes a modern online business with:
 - A testing plan
 - A source list
 
+## Current Deliverables
+- Business continuity strategy: [bcp-strategy.md](bcp-strategy.md)
+- Risk analysis: [risk-analysis.md](risk-analysis.md)
+- Outage case study: [outage-case-study.md](outage-case-study.md)
+- Cloud continuity architecture diagram: [cloud-continuity-architecture-diagram.puml](cloud-continuity-architecture-diagram.puml)
+
 ## Key Takeaways
 - Cloud improves resilience, but it does not remove continuity risk.
 - Vendor outages, IAM failures, and third-party dependencies must be part of business continuity planning.
