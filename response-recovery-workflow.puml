@@ -63,20 +63,19 @@ endif
 stop
 
 legend right
-|= Visual Element |= Meaning |
-| Start/End (mint) | Workflow begins/ends |
-| Decision (violet) | A yes/no choice point |
-| Action (soft white) | Concrete step the team performs |
-| Arrows (navy) | Order of operations |
-endlegend
-
-note bottom
+Visual key
+Start/End (mint): Workflow begins and ends
+Decision (violet): Yes/No choice point
+Action (soft white): Concrete team step
+Arrows (navy): Order of operations
+---
 Plain-English guide:
-This chart shows what the team does during an outage.
-First, they confirm customer impact. Then they decide whether the issue is local or provider-wide.
-In parallel, they work on routing, app fallback, external dependency handling, and communication.
-They stay in recovery mode until login and checkout are stable.
-Finally, they review what happened and improve the plan for next time.
-end note
+1) Confirm customer impact.
+2) Decide if issue is local or provider-wide.
+3) In parallel, handle routing, app fallback,
+   dependency issues, and communication.
+4) Stay in recovery mode until login and checkout stabilize.
+5) Run post-incident review and improvement actions.
+endlegend
 
 @enduml
