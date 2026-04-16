@@ -1,0 +1,109 @@
+@startuml
+title Cloud Continuity Architecture
+left to right direction
+
+' Palette
+' #211951 (deep navy)
+' #836FFF (violet)
+' #15F5BA (mint)
+' #F0F3FF (soft white)
+
+skinparam backgroundColor #F0F3FF
+skinparam shadowing false
+skinparam defaultFontName Segoe UI
+skinparam defaultFontColor #211951
+
+skinparam ArrowColor #211951
+skinparam ArrowThickness 1
+skinparam package {
+  BorderColor #211951
+  FontColor #211951
+  BackgroundColor #F0F3FF
+}
+
+skinparam rectangle {
+  BorderColor #211951
+  FontColor #211951
+  BackgroundColor #F0F3FF
+}
+
+skinparam rectangle<<primary>> {
+  BackgroundColor #836FFF
+  BorderColor #211951
+  FontColor #F0F3FF
+}
+
+skinparam rectangle<<secondary>> {
+  BackgroundColor #15F5BA
+  BorderColor #211951
+  FontColor #211951
+}
+
+skinparam rectangle<<external>> {
+  BackgroundColor #211951
+  BorderColor #211951
+  FontColor #F0F3FF
+}
+
+skinparam rectangle<<neutral>> {
+  BackgroundColor #F0F3FF
+  BorderColor #211951
+  FontColor #211951
+}
+
+rectangle "Customers" as U <<neutral>>
+rectangle "DNS + Edge Protection" as DNS <<external>>
+
+package "Primary Region" {
+  rectangle "Web Frontend" as PWEB <<primary>>
+  rectangle "API Layer" as PAPI <<primary>>
+  rectangle "Primary Database" as PDB <<primary>>
+}
+
+package "Secondary Region" {
+  rectangle "Web Frontend" as SWEB <<secondary>>
+  rectangle "API Layer" as SAPI <<secondary>>
+  rectangle "Secondary DB Replica" as SDB <<secondary>>
+}
+
+package "Third-Party Dependencies" {
+  rectangle "Identity Provider" as IDP <<external>>
+  rectangle "Payment Processor" as PAY <<external>>
+}
+
+package "Operations" {
+  rectangle "Monitoring + Alerting" as MON <<neutral>>
+  rectangle "Incident Response Team" as IR <<neutral>>
+  rectangle "Status Communication" as COMMS <<neutral>>
+}
+
+U --> DNS
+DNS --> PWEB
+DNS --> SWEB
+
+PWEB --> PAPI
+SWEB --> SAPI
+
+PAPI --> PDB
+SAPI --> SDB
+PDB ..> SDB : replication
+
+PAPI --> IDP
+SAPI --> IDP
+PAPI --> PAY
+SAPI --> PAY
+
+PAPI --> MON
+SAPI --> MON
+MON --> IR
+IR --> COMMS
+
+legend right
+|= Type |= Color |
+| Primary Region Services | #836FFF |
+| Secondary Region Services | #15F5BA |
+| External Dependencies | #211951 |
+| Neutral Background / Ops | #F0F3FF |
+endlegend
+
+@enduml
