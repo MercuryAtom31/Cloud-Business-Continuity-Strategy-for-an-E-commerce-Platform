@@ -1,0 +1,85 @@
+@startuml
+title Response and Recovery Workflow
+left to right direction
+
+' Palette
+' #211951 (deep navy)
+' #836FFF (violet)
+' #15F5BA (mint)
+' #F0F3FF (soft white)
+
+skinparam backgroundColor #F0F3FF
+skinparam shadowing false
+skinparam defaultFontName Segoe UI
+skinparam defaultFontColor #211951
+skinparam ArrowColor #211951
+skinparam ArrowThickness 1
+
+skinparam activity {
+  StartColor #15F5BA
+  EndColor #15F5BA
+  BarColor #211951
+  DiamondBackgroundColor #836FFF
+  DiamondBorderColor #211951
+  DiamondFontColor #F0F3FF
+  BackgroundColor #F0F3FF
+  BorderColor #211951
+  FontColor #211951
+}
+
+start
+:Monitoring detects error spikes\nor support receives complaints;
+:Incident manager is activated;
+
+if (Is customer impact confirmed?) then (Yes)
+  :Classify severity\n(critical/high/medium);
+else (No)
+  :Continue observation and diagnostics;
+  stop
+endif
+
+if (Is this a provider-wide issue?) then (Yes)
+  :Switch to continuity mode and\nfocus on customer-safe fallback;
+else (No)
+  :Apply local fix and monitor recovery;
+endif
+
+fork
+  :Traffic actions:\nRoute users to healthy region;
+fork again
+  :Application actions:\nEnable degraded mode\n(guest browsing/guest checkout where allowed);
+fork again
+  :Dependency actions:\nRetry/queue payment requests\nand apply login fallback options;
+fork again
+  :Communication actions:\nPublish status page update\nand internal incident update;
+end fork
+
+if (Are checkout and login stable?) then (Yes)
+  :Maintain heightened monitoring;
+  :Announce service stabilization;
+else (No)
+  :Escalate to secondary recovery plan\nand continue mitigations;
+endif
+
+:Run post-incident review;
+:Track corrective actions and\nschedule continuity test;
+stop
+
+legend right
+|= Visual Element |= Meaning |
+| Start/End (mint) | Workflow begins/ends |
+| Decision (violet) | A yes/no choice point |
+| Action (soft white) | Concrete step the team performs |
+| Arrows (navy) | Order of operations |
+endlegend
+
+note bottom
+Plain-English guide:
+This chart shows what the team does during an outage.
+First, they confirm customer impact. Then they decide whether the issue is local or provider-wide.
+In parallel, they work on routing, app fallback, external dependency handling, and communication.
+They stay in recovery mode until login and checkout are stable.
+Finally, they review what happened and improve the plan for next time.
+end note
+
+@enduml
