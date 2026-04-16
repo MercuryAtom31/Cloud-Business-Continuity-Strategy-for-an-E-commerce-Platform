@@ -106,4 +106,15 @@ legend right
 | Neutral Background / Ops | #F0F3FF |
 endlegend
 
+note bottom of COMMS
+Plain-English guide:
+1) Customers enter through DNS + Edge Protection (the front door).
+2) Traffic normally goes to the Primary Region (violet boxes).
+3) If the primary side has issues, traffic can go to the Secondary Region (mint boxes).
+4) Both regions rely on outside providers for login and payments (dark navy boxes).
+5) Database replication means key data is copied to the secondary side for recovery.
+6) Monitoring alerts the incident team, and that team sends status updates.
+In short: the diagram shows how the shop keeps working or recovers faster when one part fails.
+end note
+
 @enduml
