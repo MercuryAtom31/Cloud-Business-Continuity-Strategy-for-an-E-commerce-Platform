@@ -20,3 +20,9 @@ The tests are designed to prove the following outcomes:
 3. Data can be restored correctly within acceptable limits.
 4. Response teams can coordinate actions and communications quickly.
 5. Lessons learned are captured and turned into corrective actions.
+
+## Test Governance
+- Test Owner: Business continuity lead
+- Technical Lead: Platform operations lead
+- Stakeholders: Engineering, support, security, product, leadership
+- Evidence Repository: Project documentation folder and incident records
