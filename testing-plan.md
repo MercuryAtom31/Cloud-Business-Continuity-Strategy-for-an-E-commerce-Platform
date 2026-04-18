@@ -32,3 +32,12 @@ The tests are designed to prove the following outcomes:
 - Quarterly: End-to-end continuity simulation
 - Semi-Annual: Cross-region failover exercise
 - Annual: Full business continuity drill with executive communication
+
+## Core Recovery Targets
+Use these targets as pass/fail criteria unless revised by leadership.
+
+- Storefront browsing recovery target: within 30 minutes
+- Checkout recovery target: within 45 minutes
+- Login/authentication fallback target: within 30 minutes
+- Data restore validation target: initial verification within 60 minutes
+- First customer status update: within 15 minutes of incident confirmation
