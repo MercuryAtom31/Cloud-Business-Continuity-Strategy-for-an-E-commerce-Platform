@@ -26,3 +26,9 @@ The tests are designed to prove the following outcomes:
 - Technical Lead: Platform operations lead
 - Stakeholders: Engineering, support, security, product, leadership
 - Evidence Repository: Project documentation folder and incident records
+
+## Test Cadence
+- Monthly: Targeted technical tests (single component or dependency)
+- Quarterly: End-to-end continuity simulation
+- Semi-Annual: Cross-region failover exercise
+- Annual: Full business continuity drill with executive communication
