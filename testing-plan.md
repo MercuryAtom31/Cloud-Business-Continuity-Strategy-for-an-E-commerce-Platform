@@ -41,3 +41,17 @@ Use these targets as pass/fail criteria unless revised by leadership.
 - Login/authentication fallback target: within 30 minutes
 - Data restore validation target: initial verification within 60 minutes
 - First customer status update: within 15 minutes of incident confirmation
+
+## Test Scenarios
+
+### Scenario 1: Regional Cloud Service Outage
+- Goal: Validate failover and continuity of customer-facing services.
+- Trigger: Simulate primary region unavailability.
+- Expected behavior:
+  - Traffic is routed to secondary region.
+  - Storefront remains available.
+  - Checkout remains available or enters controlled degraded mode.
+- Evidence:
+  - Routing change logs
+  - Service health metrics
+  - Customer journey validation screenshots
