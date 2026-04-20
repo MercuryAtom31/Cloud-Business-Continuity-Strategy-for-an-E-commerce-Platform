@@ -67,3 +67,15 @@ Use these targets as pass/fail criteria unless revised by leadership.
   - Authentication error metrics
   - Fallback activation logs
   - User experience test results
+
+### Scenario 3: Payment Processor Disruption
+- Goal: Validate payment continuity controls.
+- Trigger: Simulate payment API latency/errors.
+- Expected behavior:
+  - Retry and queue logic activates.
+  - Customer messaging explains delayed confirmation if needed.
+  - No duplicate charging occurs.
+- Evidence:
+  - Payment retry logs
+  - Idempotency checks
+  - Checkout completion and failure rates

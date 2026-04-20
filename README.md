@@ -27,6 +27,8 @@ The scenario assumes a modern online business with:
 - Outage case study: [outage-case-study.md](outage-case-study.md)
 - Cloud continuity architecture diagram: [cloud-continuity-architecture-diagram.puml](cloud-continuity-architecture-diagram.puml)
 - Response and recovery workflow diagram: [response-recovery-workflow.puml](response-recovery-workflow.puml)
+- Testing plan: [testing-plan.md](testing-plan.md)
+- Source list: [sources.md](sources.md)
 
 ## Key Takeaways
 - Cloud improves resilience, but it does not remove continuity risk.
