@@ -98,13 +98,17 @@ Communication must be part of continuity, not an afterthought.
 - Track decisions during the incident so the post-incident review can be complete.
 
 ## Testing and Validation
-Continuity controls should be tested regularly.
+Testing is mandatory, but this strategy document does not define test procedures. It defines policy direction and required outcomes.
 
-- Run failover tests for critical customer-facing services.
-- Perform restore tests for databases and application configuration.
-- Simulate cloud provider service interruptions and dependency outages.
-- Test authentication and payment fallback behavior.
-- Review alerting thresholds and incident escalation paths after each exercise.
+Execution details, cadence, scenarios, evidence requirements, and pass/fail criteria are maintained in [testing-plan.md](testing-plan.md).
+
+At a policy level, testing must validate the following:
+
+- Critical service recovery objectives can be achieved.
+- Dependency failures can be handled with controlled degradation.
+- Data restore capability is proven through repeatable exercises.
+- Incident communication timelines are met.
+- Corrective actions are tracked to completion after each exercise.
 
 ## Success Measures
 The strategy is effective if the platform can consistently meet the following measures:
