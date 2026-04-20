@@ -152,3 +152,5 @@ Each test should produce a short report containing:
 - Outcome (pass/fail/partial)
 - Corrective actions, owners, and due dates
 
+## Continuous Improvement
+The testing plan is a living document. Update it after each major incident, architecture change, or dependency change so continuity testing always reflects real operational risk.
