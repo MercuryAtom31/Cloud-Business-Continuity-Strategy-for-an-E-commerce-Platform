@@ -79,3 +79,13 @@ Use these targets as pass/fail criteria unless revised by leadership.
   - Payment retry logs
   - Idempotency checks
   - Checkout completion and failure rates
+
+### Scenario 4: DNS or Edge Routing Failure
+- Goal: Validate access continuity during entry-point disruption.
+- Trigger: Simulate DNS/edge path instability.
+- Expected behavior:
+  - Alternate routing/failover records are applied.
+  - Time to recover entry-point availability is measured.
+- Evidence:
+  - DNS/edge configuration change records
+  - Synthetic availability reports
