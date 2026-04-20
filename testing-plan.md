@@ -113,3 +113,12 @@ Use these targets as pass/fail criteria unless revised by leadership.
   - Timestamped internal notifications
   - Status page timeline
   - Message quality review
+
+## Test Execution Workflow
+1. Define scope, participants, and success criteria.
+2. Execute the scenario safely in test/staging or controlled production windows.
+3. Capture metrics, logs, and user journey outcomes.
+4. Evaluate pass/fail against recovery targets.
+5. Run post-test review and assign corrective actions.
+6. Track action closure and schedule retest where required.
+
