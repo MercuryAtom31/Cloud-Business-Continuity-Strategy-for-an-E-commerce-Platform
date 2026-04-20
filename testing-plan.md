@@ -141,3 +141,14 @@ A scenario passes when:
 - Corrective actions are documented for all observed gaps.
 
 A scenario fails when one or more critical objectives are missed or cannot be proven with evidence.
+
+## Post-Test Reporting
+Each test should produce a short report containing:
+
+- Scenario and date
+- Participants
+- Timeline and key decisions
+- Metric results
+- Outcome (pass/fail/partial)
+- Corrective actions, owners, and due dates
+
