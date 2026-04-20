@@ -101,3 +101,15 @@ Use these targets as pass/fail criteria unless revised by leadership.
   - Backup/restore logs
   - Data validation scripts or checklists
   - Recovery timeline
+
+### Scenario 6: Incident Communications Drill
+- Goal: Validate communication readiness.
+- Trigger: Simulated customer-impacting outage.
+- Expected behavior:
+  - Internal escalation starts quickly.
+  - Customer status message is published on time.
+  - Updates continue at agreed intervals.
+- Evidence:
+  - Timestamped internal notifications
+  - Status page timeline
+  - Message quality review
