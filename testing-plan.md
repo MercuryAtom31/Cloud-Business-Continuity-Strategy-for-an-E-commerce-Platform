@@ -122,3 +122,12 @@ Use these targets as pass/fail criteria unless revised by leadership.
 5. Run post-test review and assign corrective actions.
 6. Track action closure and schedule retest where required.
 
+## Metrics to Record
+- Time to detect
+- Time to classify incident severity
+- Time to activate continuity mode
+- Time to restore critical services
+- Checkout success rate during disruption
+- Login success/fallback rate during disruption
+- Data restore completion time
+- Time to first customer communication
