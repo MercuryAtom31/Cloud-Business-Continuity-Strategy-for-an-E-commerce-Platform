@@ -89,3 +89,15 @@ Use these targets as pass/fail criteria unless revised by leadership.
 - Evidence:
   - DNS/edge configuration change records
   - Synthetic availability reports
+
+### Scenario 5: Data Corruption and Restore Test
+- Goal: Validate backup and restore readiness.
+- Trigger: Controlled corruption simulation in a non-production environment.
+- Expected behavior:
+  - Restore from backup is completed successfully.
+  - Data consistency checks pass.
+  - Recovery actions are documented.
+- Evidence:
+  - Backup/restore logs
+  - Data validation scripts or checklists
+  - Recovery timeline
