@@ -55,3 +55,15 @@ Use these targets as pass/fail criteria unless revised by leadership.
   - Routing change logs
   - Service health metrics
   - Customer journey validation screenshots
+
+### Scenario 2: Identity Provider Outage
+- Goal: Validate continuity when third-party authentication is degraded.
+- Trigger: Simulate identity provider failures/timeouts.
+- Expected behavior:
+  - Guest browsing remains available.
+  - Guest checkout mode is enabled when allowed.
+  - Account-specific features degrade gracefully.
+- Evidence:
+  - Authentication error metrics
+  - Fallback activation logs
+  - User experience test results
