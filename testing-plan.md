@@ -131,3 +131,13 @@ Use these targets as pass/fail criteria unless revised by leadership.
 - Login success/fallback rate during disruption
 - Data restore completion time
 - Time to first customer communication
+
+## Pass/Fail Criteria
+A scenario passes when:
+
+- Recovery target times are met for in-scope services.
+- No critical data integrity issues remain unresolved.
+- Customer communication timeline meets defined standard.
+- Corrective actions are documented for all observed gaps.
+
+A scenario fails when one or more critical objectives are missed or cannot be proven with evidence.
