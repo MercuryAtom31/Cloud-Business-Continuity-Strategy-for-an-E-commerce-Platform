@@ -3,6 +3,12 @@
 ## Purpose
 This testing plan defines how the organization validates that continuity controls actually work during cloud outages, dependency failures, and data recovery events.
 
+## Related Documents
+- [bcp-strategy.md](bcp-strategy.md) for continuity policy and required outcomes.
+- [risk-analysis.md](risk-analysis.md) for priority risks and mitigation focus areas.
+- [outage-case-study.md](outage-case-study.md) for incident-based evidence and lessons.
+- [sources.md](sources.md) for supporting references.
+
 ## Relationship to the Strategy
 This document operationalizes [bcp-strategy.md](bcp-strategy.md).
 
