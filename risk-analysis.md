@@ -3,6 +3,14 @@
 ## Purpose
 This document identifies the main risks that could disrupt the cloud-based e-commerce platform and evaluates their business impact, likelihood, and mitigation options. The analysis is focused on business continuity rather than on purely technical failure modes.
 
+## Relationship to the Outage Case Study
+This document is the risk register view. It provides a forward-looking, structured assessment of what could happen and how risk should be treated.
+
+- [risk-analysis.md](risk-analysis.md) defines risk categories, likelihood/impact ratings, and mitigation priorities.
+- [outage-case-study.md](outage-case-study.md) documents one realistic incident narrative, response behavior, and lessons learned.
+
+In short: this file prioritizes risks before incidents; the case study evaluates performance during an incident.
+
 ## Risk Rating Method
 Each risk is rated using a simple scale:
 
