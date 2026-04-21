@@ -3,6 +3,14 @@
 ## Purpose
 This case study examines a realistic cloud outage scenario affecting a modern e-commerce platform. It shows how dependency failures can disrupt customer transactions, what response actions are most effective, and which continuity improvements should be prioritized.
 
+## Relationship to Risk Analysis
+This document is the incident narrative view. It explains what happened in one representative disruption and how response and recovery played out in practice.
+
+- [outage-case-study.md](outage-case-study.md) describes timeline, impacts, response gaps, and lessons from a concrete event.
+- [risk-analysis.md](risk-analysis.md) maintains broader risk ratings and mitigation priorities across multiple risk types.
+
+In short: this file provides incident evidence; the risk analysis provides portfolio-level prioritization.
+
 ## Scenario Overview
 The company runs its storefront and APIs on a managed cloud application platform with DNS and edge protection from a cloud network provider. It also relies on:
 
