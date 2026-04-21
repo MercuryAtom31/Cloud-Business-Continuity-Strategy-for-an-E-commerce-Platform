@@ -3,6 +3,12 @@
 ## Purpose
 This document defines the business continuity strategy for a cloud-based e-commerce platform that depends on cloud networking, a managed application platform, a third-party payment processor, and a third-party identity provider. The goal is to keep customer-facing services available, protect orders and customer data, and restore operations quickly after a disruption.
 
+## Related Documents
+- [risk-analysis.md](risk-analysis.md) for risk ratings and mitigation prioritization.
+- [outage-case-study.md](outage-case-study.md) for incident evidence and lessons learned.
+- [testing-plan.md](testing-plan.md) for validation execution, cadence, and pass/fail criteria.
+- [sources.md](sources.md) for supporting references.
+
 ## Business Objectives
 The continuity strategy is designed around the following objectives:
 
