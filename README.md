@@ -30,6 +30,15 @@ The scenario assumes a modern online business with:
 - Testing plan: [testing-plan.md](testing-plan.md)
 - Source list: [sources.md](sources.md)
 
+## Document Map
+- [bcp-strategy.md](bcp-strategy.md): Policy direction, continuity objectives, and governance expectations.
+- [risk-analysis.md](risk-analysis.md): Risk register, likelihood/impact ratings, and mitigation priorities.
+- [outage-case-study.md](outage-case-study.md): Incident narrative, impact analysis, response performance, and lessons learned.
+- [testing-plan.md](testing-plan.md): Validation scenarios, cadence, evidence, and pass/fail criteria.
+- [sources.md](sources.md): Reference base used across all written deliverables.
+- [cloud-continuity-architecture-diagram.puml](cloud-continuity-architecture-diagram.puml): Continuity architecture view.
+- [response-recovery-workflow.puml](response-recovery-workflow.puml): Incident response and recovery sequence.
+
 ## Key Takeaways
 - Cloud improves resilience, but it does not remove continuity risk.
 - Vendor outages, IAM failures, and third-party dependencies must be part of business continuity planning.
