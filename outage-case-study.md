@@ -3,6 +3,12 @@
 ## Purpose
 This case study examines a realistic cloud outage scenario affecting a modern e-commerce platform. It shows how dependency failures can disrupt customer transactions, what response actions are most effective, and which continuity improvements should be prioritized.
 
+## Related Documents
+- [bcp-strategy.md](bcp-strategy.md) for continuity policy direction and recovery priorities.
+- [risk-analysis.md](risk-analysis.md) for broader risk ratings and mitigation prioritization.
+- [testing-plan.md](testing-plan.md) for exercises that validate corrective actions.
+- [sources.md](sources.md) for supporting references.
+
 ## Relationship to Risk Analysis
 This document is the incident narrative view. It explains what happened in one representative disruption and how response and recovery played out in practice.
 
