@@ -3,6 +3,12 @@
 ## Purpose
 This document identifies the main risks that could disrupt the cloud-based e-commerce platform and evaluates their business impact, likelihood, and mitigation options. The analysis is focused on business continuity rather than on purely technical failure modes.
 
+## Related Documents
+- [bcp-strategy.md](bcp-strategy.md) for continuity policy direction and priorities.
+- [outage-case-study.md](outage-case-study.md) for incident narrative evidence.
+- [testing-plan.md](testing-plan.md) for testing scenarios that validate key mitigations.
+- [sources.md](sources.md) for supporting references.
+
 ## Relationship to the Outage Case Study
 This document is the risk register view. It provides a forward-looking, structured assessment of what could happen and how risk should be treated.
 
